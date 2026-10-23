@@ -1,0 +1,25 @@
+package com.arena.armas;
+public class Arma {
+ private int municion = 30;
+ protected int cargador = 5;
+ int danioBase = 50;
+ public String nombre;
+ public int getMunicion() {
+ return municion;
+ }
+ public void setMunicion(int municion) {
+ if (municion < 0) {
+ municion = 0;
+ } else if (municion > 30) {
+ municion = 30;
+ }
+ this.municion = municion;
+ }
+ public int getDaniobase(){
+ return danioBase;
+ }
+ 
+ public int getCargador(){
+ return cargador;
+ }
+}
