@@ -1,0 +1,11 @@
+package com.arena.leyendas;
+import com.arena.armas.Arma; 
+public class Leyenda {
+ private final Arma arma;
+ public Leyenda(Arma arma) {
+ this.arma = arma;
+ }
+ public void disparar() {
+ arma.setMunicion(arma.getMunicion() - 1);
+ }
+}
