@@ -1,0 +1,10 @@
+package com.arena.app;
+import com.arena.armas.Arma;
+public class Escopeta extends Arma {
+ public Escopeta() {
+ this.cargador = 30;
+ }
+ public void mostrar() {
+ System.out.println("Cargador: " + cargador);
+ }
+}
