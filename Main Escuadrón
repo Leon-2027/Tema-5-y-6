@@ -1,0 +1,13 @@
+package com.arena.app;
+import com.arena.leyendas.Leyenda;
+public class Main {
+ public static void main(String[] args) {
+ Escopeta escopeta = new Escopeta();
+ Leyenda leyenda = new Leyenda(escopeta);
+ for (int i = 0; i < 5; i++) { leyenda.disparar();
+ }
+ System.out.println("Munición restante: " + escopeta.getMunicion());
+ System.out.println("Cargador: " + escopeta.getCargador());
+ System.out.println("Daño base: " + escopeta.getdanioBase());
+ }
+}
