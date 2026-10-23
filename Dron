@@ -1,0 +1,21 @@
+class Dron{
+ private String modelo;
+ private float bateria=100;
+ private float altura=0;
+ 
+ public float getBateria(){
+ return bateria;
+ }
+ public void setBateria(){
+ if (bateria<0) bateria=0;
+ if (bateria>100) bateria=100;
+ this.bateria=bateria;
+ }
+ 
+ public float getAltura(){
+ return altura;
+ }
+ public void Altura(){
+ if (altura<0) System.out.println("Altura inválida");
+ }
+}
